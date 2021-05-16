@@ -22,7 +22,7 @@ exports.getForecastsByLocation = async (req, res, next) => {
         status: 200,
         results: result.length,
         data: {
-          data: result,
+          result,
         },
       });
     } else {
